@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>あみだくじ</title>
+  
+    <!-- self defined CSS -->
+    <link rel= "stylesheet" href= "../supplement/Amidakuji.css">
+
+
+</head>
+
+<body>
+    <img src = ../img/Amidakuji_en.png></img>
+
+    <form name='form' id='form'>
+        <input type='text' name='Nº Players' id='NP' />
+        <input type='button' name='submit' value='Confirm' onclick='processFormData();' />
+    </form>
+
+    <img id= "fin" src = "../img/confirm_en.png"></img>
+    <a href="../PageAccueil.html"><img id= "rtn" src = "../img/return_en.png"></img></a>
+
+    <div id = "name">
+        <div class = "insert" contenteditable="true">Name</div>
+        <div class = "insert" contenteditable="true">Name</div>
+        <div class = "insert" contenteditable="true">Name</div>
+        <div class = "insert" contenteditable="true">Name</div>
+        <div class = "insert" contenteditable="true">Name</div>
+        <div class = "insert" contenteditable="true">Name</div>
+        <div class = "insert" contenteditable="true">Name</div>
+        <div class = "insert" contenteditable="true">Name</div>
+        <div class = "insert" contenteditable="true">Name</div>
+        <div class = "insert" contenteditable="true">Name</div>
+    </div>
+
+    <div id = "options">
+        <div class = "insert" contenteditable="true">Name</div>
+        <div class = "insert" contenteditable="true">Name</div>
+        <div class = "insert" contenteditable="true">Name</div>
+        <div class = "insert" contenteditable="true">Name</div>
+        <div class = "insert" contenteditable="true">Name</div>
+        <div class = "insert" contenteditable="true">Name</div>
+        <div class = "insert" contenteditable="true">Name</div>
+        <div class = "insert" contenteditable="true">Name</div>
+        <div class = "insert" contenteditable="true">Name</div>
+        <div class = "insert" contenteditable="true">Name</div>
+    </div>
+
+    <table> 
+        <tr>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "1"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "2"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "3"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "4"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "5"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "6"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "7"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "8"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "9"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+        </tr>
+
+        <tr>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "11"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "12"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "13"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "14"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "15"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "16"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "17"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "18"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "19"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+        </tr>
+
+        <tr>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "21"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "22"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "23"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "24"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "25"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "26"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "27"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "28"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "29"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+        </tr>
+
+        <tr>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "31"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "32"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "33"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "34"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "35"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "36"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "37"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "38"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "39"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+        </tr>
+
+        <tr>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "41"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "42"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "43"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "44"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "45"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "46"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "47"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "48"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "49"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+        </tr>
+
+        <tr>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "51"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "52"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "53"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "54"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "55"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "56"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "57"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "58"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "59"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+        </tr>
+
+        <tr>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "61"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "62"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "63"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "64"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "65"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "66"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "67"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "68"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "69"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+        </tr>
+
+        <tr>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "71"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "72"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "73"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "74"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "75"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "76"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "77"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "78"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "79"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+        </tr>
+
+        <tr>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "81"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "82"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "83"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "84"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "85"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "86"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "87"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "88"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "89"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+        </tr>
+
+        <tr>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "91"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "92"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "93"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "94"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "95"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "96"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "97"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "98"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+            <td class = "wide">
+                <div class = "link" id = "99"></div>
+            </td>
+            <td class = "narrow" >
+                <div class = "main"></div>
+            </td>
+        </tr>
+
+    </table>
+
+    <img id = "sub1" src = ../img/title1_en.png></img>
+    <img id = "sub2" src = ../img/title2_en.png></img>
+    <img id = "sub3" src = ../img/title3_en.png></img>
+
+
+
+
+    <!-- import javascript form Bootstrap -->
+    <!-- jQuery first -> Popper.js -> Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- self defined JS -->
+    <script src="../supplement/Amidakuji.js"></script>
+
+</body>
+
+</html>
