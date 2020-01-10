@@ -72,7 +72,7 @@ td.wide{
 }
 
 table {
-    position: absolute; bottom: 20%;
+    position: absolute; top: 18%;
     left: 50%; margin-left: -383px;   
 }
 
@@ -97,7 +97,7 @@ form{
 
 div#name{
 	position: absolute;
-	top: 9%; left: 22%;
+	top: 12%; left: 22%;
 }
 
 div#options{
